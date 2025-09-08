@@ -78,10 +78,10 @@ src/
 4. Nos arquivos authorize e authController altere a secret key:
 
     ```js
-    // authorize.js
+    // src/middlewares/authorize.js
     const decoded = jwt.verify(token, process.env.JWT_SECRET || "o<sGH8?@Rc8hZE%0FD9&nm-*?Bb0l$");
 
-    // authController.js
+    // src/controllers/authController.js
     const token = jwt.sign({
             id: usuario.AdministradorId || usuario.MotoristaId,
             email: usuario.Email,
