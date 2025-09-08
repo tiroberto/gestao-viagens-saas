@@ -98,8 +98,7 @@ src/
    npm run dev
    ```
 
-6. Login para testes:
-Rota: localhost:3000/login
+6. Login para testes: /login (método post)
 
    ```json
    {
