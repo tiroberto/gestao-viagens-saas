@@ -21,25 +21,25 @@
 * Roles & permissões: usuários logam sem passar tipo do usuário, o sistema identifica se é Administrador ou Motorista e inclui role no JWT.
 
 ## Estrutura de pastas:
+```
 src/
 ├── controllers/
 │   ├── AuthController.js
 │   ├── ViagemController.js
 │   └── ...
 ├── models/
+│   ├── dto/
+│      ├── ViagemDTO.js
+│      ├── MotoristaDTO.js
+│      └── ...
 │   ├── Viagem.js
-│   ├── Passageiro.js
-│   ├── PassageiroViagem.js
-│   ├── LogSistema.js
-│   └── index.js  (init + associate)
+│   ├── Motorista.js
+│   └── ...
 ├── middlewares/
-│   └── authorize.js
+│   ├── authorize.js
+│   └── associate.js (init + associate)
 ├── utils/
 │   ├── cpfValidator.js
-│   ├── diffObjects.js
-│   └── compareDates.js
-├── dtos/
-│   ├── PassageiroDTO.js
-│   └── ...
 └── config/
     └── db.js
+```
