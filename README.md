@@ -77,12 +77,11 @@ src/
 
 4. Nos arquivos authorize e authController altere a secret key:
 
-authorize.js:
-   ```js
+    ```js
+    // authorize.js
     const decoded = jwt.verify(token, process.env.JWT_SECRET || "o<sGH8?@Rc8hZE%0FD9&nm-*?Bb0l$");
-   ```
-authController.js
-   ```js
+
+    // authController.js
     const token = jwt.sign({
             id: usuario.AdministradorId || usuario.MotoristaId,
             email: usuario.Email,
@@ -91,7 +90,7 @@ authController.js
         process.env.JWT_SECRET || "o<sGH8?@Rc8hZE%0FD9&nm-*?Bb0l$",
         { expiresIn: "12h" }
     );
-   ```
+    ```
 
 5. Execute a aplicação:
 
