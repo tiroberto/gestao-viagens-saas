@@ -151,8 +151,6 @@ Deve-se adicionar o token de autenticação no header da requisição
 }
 ```
 
-Link de todas requisições utilizando postman: [Postman](https://web.postman.co/workspace/My-Workspace~5a3d7f90-1456-4f47-8d5b-677d8266ec71/collection/11108065-27f82502-c105-4149-bae5-0764582d1cb9?action=share&source=copy-link&creator=11108065)
-
 ---
 
 ## ✍️ Autor
