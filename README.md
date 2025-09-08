@@ -76,18 +76,18 @@ src/
    ```
 
 4. No arquivo authorize altere a secret key:
-5. 
+   
     ```js
     const decoded = jwt.verify(token, process.env.JWT_SECRET || "o<sGH8?@Rc8hZE%0FD9&nm-*?Bb0l$");
     ```
 
-4. Execute a aplicação:
+5. Execute a aplicação:
 
    ```bash
    npm run dev
    ```
 
-5. Login para testes:
+6. Login para testes:
 Rota: localhost:3000/login
 
    ```json
