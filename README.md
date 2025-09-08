@@ -19,3 +19,27 @@
 ## Funcionalidades SaaS destacadas:
 * Multi-tenant: utiliza InquilinoId em todas as entidades, garantindo isolamento de dados por cliente.
 * Roles & permissões: usuários logam sem passar tipo do usuário, o sistema identifica se é Administrador ou Motorista e inclui role no JWT.
+
+## Estrutura de pastas:
+src/
+├── controllers/
+│   ├── AuthController.js
+│   ├── ViagemController.js
+│   └── ...
+├── models/
+│   ├── Viagem.js
+│   ├── Passageiro.js
+│   ├── PassageiroViagem.js
+│   ├── LogSistema.js
+│   └── index.js  (init + associate)
+├── middlewares/
+│   └── authorize.js
+├── utils/
+│   ├── cpfValidator.js
+│   ├── diffObjects.js
+│   └── compareDates.js
+├── dtos/
+│   ├── PassageiroDTO.js
+│   └── ...
+└── config/
+    └── db.js
