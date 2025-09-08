@@ -93,10 +93,10 @@ Rota: localhost:3000/login
 
 ---
 
-## 📄 Exemplos de Requisições JSON:
+## 📄 Exemplos de Requisição JSON:
 
-### 🔹 Marcar uma consulta: /Consulta/adicionar
-  - Deve-se adicionar o token de autenticação no header da requisição
+### 🔹 Criar uma viagem: /viagem (método post)
+Deve-se adicionar o token de autenticação no header da requisição
 
 ```json
 {
@@ -104,9 +104,9 @@ Rota: localhost:3000/login
     "CidadeDestino": "São Paulo-MG",
     "TarefasExtras": "Pegar pasta de documentos",
     "Carro": { "CarroId": 1 },
-    "Motorista": { "MotoristaId": 2 },
-    "Administrador": { "AdministradorId": 2 },
-    "Setor": { "SetorId": 2},
+    "Motorista": { "MotoristaId": 1 },
+    "Administrador": { "AdministradorId": 1 },
+    "Setor": { "SetorId": 1 },
     "Passageiros": [
         {
             "PassageiroId": 1,
