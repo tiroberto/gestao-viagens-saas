@@ -75,6 +75,12 @@ src/
    npm install
    ```
 
+4. No arquivo authorize altere a secret key:
+5. 
+    ```js
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || "o<sGH8?@Rc8hZE%0FD9&nm-*?Bb0l$");
+    ```
+
 4. Execute a aplicação:
 
    ```bash
